@@ -1,0 +1,29 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+/* FIM RESET CSS */
+
+.numero, .operacao {
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+}
+
+#visor {
+    background-color: rgba(137, 43, 226, 0.378);
+    width: 500px;
+    height: 150px;
+}
