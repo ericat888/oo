@@ -1,29 +1,48 @@
-/* RESET CSS */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    border: 0;
     padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(fundoaguaviva.jpg);
+    background-size: 1370px 1000px;
+    background-repeat: no-repeat;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-}
-/* FIM RESET CSS */
-
-.numero, .operacao {
-    width: 150px;
-    height: 150px;
-    background-color: blueviolet;
-}
 
 #visor {
-    background-color: rgba(137, 43, 226, 0.378);
-    width: 500px;
-    height: 150px;
+    width: 90%;
+    padding: 10px;
+    font-size: 24px;
+    margin: 0 auto; 
+    margin-bottom: 10px;
+    display: block; 
+    color: black;
 }
+
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.numero,
+.operacao {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #2d1695;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.numero:hover,
+.operacao:hover {
+    background-color: #0a072c;
+}
+
